@@ -4,7 +4,9 @@ A set of cool Docker and Docker Compose bash aliase
 **Important: It only works in Linux' Bash** Pull Request are welcome to support other shells and operational systems.
 
 ## Setup
-Clone this project, cd into it and run `cat aliases >> ~/.bash_aliases` in your terminal.
+Clone this project, cd into it and run `cat aliases >> ~/.bash_aliases` in your terminal. 
+
+After that, run `source ~/.bashrc` to update these changes in your current bash session.
 
 ## Docker Compose
 
