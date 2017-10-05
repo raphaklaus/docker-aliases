@@ -35,4 +35,4 @@ Restart all services
 
 ### `dc_kill`
 
-Stop all services in docker-compose file and remove the containers. Good for a fresh start (docker-compose stop && docker-compose rm -f)
+Stop all services in docker-compose file and remove the containers. Good for a fresh start (`docker-compose stop && docker-compose rm -f`)
