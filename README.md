@@ -8,7 +8,11 @@ Clone this project, cd into it and run `cat aliases >> ~/.bash_aliases` in your 
 
 ## Docker Compose
 `dc_up` = `docker-compose up -d`
+
 `dc_up --build` = `docker-compose up -d --build`
+
 `dc_restart` = `docker-compose restart`
+
 `dc_kill` = `docker-compose stop && docker-compose rm /y`
+
 `dc_logs <lines> <service name>` = `docker-compose logs -f --tail <lines> <service name>`
