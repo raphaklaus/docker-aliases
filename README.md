@@ -7,12 +7,32 @@ A set of cool Docker and Docker Compose bash aliase
 Clone this project, cd into it and run `cat aliases >> ~/.bash_aliases` in your terminal.
 
 ## Docker Compose
-`dc_up` = `docker-compose up -d`
 
-`dc_up --build` = `docker-compose up -d --build`
+### `dc_up`
+will up all services in the docker-compose file as daemonized services (`docker-compose up -d`)
 
-`dc_restart` = `docker-compose restart`
+### `dc_up api` 
 
-`dc_kill` = `docker-compose stop && docker-compose rm /y`
+will up only api service as daemonized service (`docker-compose up -d`)
 
-`dc_logs <lines> <service name>` = `docker-compose logs -f --tail <lines> <service name>`
+### `dc_up --build` 
+
+up daemonized services but forcing build (`docker-compose up -d --build`)
+
+### `dc_up api --build`
+
+will up a daemonized service but forcing build (`docker-compose up -d`)
+
+### `dc_logs 100`
+
+show last 100 lines of api service, attaching to the log (`docker-compose logs -f --tail 100 api`)
+
+### `dc_restart` 
+
+Restart all services
+
+`dc_restart api` Restart only api service
+
+### `dc_kill`
+
+Stop all services in docker-compose file and remove the containers. Good for a fresh start (docker-compose stop && docker-compose rm -f)
